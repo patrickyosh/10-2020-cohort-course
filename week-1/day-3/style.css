@@ -1,6 +1,20 @@
-p {
+span {
   color: blue; /* Styles! */
   font-size: 20px;
   font-style: italic;
   line-height: 22px;
+  text-transform: uppercase;
+}
+
+p {
+  color: purple
+}
+
+body {
+  text-align: center;
+  color: green;
+}
+
+h1 {
+  text-transform: capitalize;
 }
