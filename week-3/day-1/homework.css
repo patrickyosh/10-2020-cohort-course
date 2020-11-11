@@ -1,0 +1,14 @@
+img {
+    width: 500px;
+}
+
+#jsCarousel{
+    overflow: hidden;
+}
+
+#slider{
+    overflow: hidden;
+   /* width: 500px;*/
+    height: 500px;
+    margin: 0 auto;
+}
