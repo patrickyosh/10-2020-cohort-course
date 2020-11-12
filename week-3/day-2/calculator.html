@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Calculator</title>
+</head>
+
+<body>
+    <form name="formCalc">
+        Number 1: <input type = "number" name = "textNum1" id = "textNum1">
+        <br>
+        Number 2: <input type = "number" name = "textNum2" id = "textNum2">
+        <br>
+        Result: <input type = "number" name = "textRes"> <br>
+
+        <input type ="button" value = "Add" onClick="sumVals()">
+
+        <input type = "button" value = "Subtract" onClick="subVals()">
+
+        <input type = "button" value = "Multiply" onClick="mulVals()">
+
+        <input type = "button" value = "Divide" onClick="divVals()">
+
+    </form>    
+
+    <script type="text/javascript">
+
+       
+
+        function sumVals(){
+            var val1, val2, sum
+            val1=Number(document.formCalc.textNum1.value);
+            val2=Number(document.formCalc.textNum2.value);
+            console.log(val1, val2)
+            sum = val1+val2;
+
+            document.formCalc.textRes.value = sum;
+            
+            
+            clearBox();
+        }
+
+        function subVals(){
+            var val1, val2, sum
+            val1=Number(document.formCalc.textNum1.value);
+            val2=Number(document.formCalc.textNum2.value);
+
+            sum = val1-val2;
+            document.formCalc.textRes.value = sum;
+            clearBox();
+        }
+        
+        function mulVals(){
+            var val1, val2, sum
+            val1=Number(document.formCalc.textNum1.value);
+            val2=Number(document.formCalc.textNum2.value);
+
+            sum = val1*val2;
+            document.formCalc.textRes.value = sum;
+            clearBox();
+        }
+
+        function divVals(){
+            var val1, val2, sum
+            val1=Number(document.formCalc.textNum1.value);
+            val2=Number(document.formCalc.textNum2.value);
+
+            sum = val1/val2;
+            document.formCalc.textRes.value = sum;
+            clearBox();
+        }
+
+        function clearBox(){
+
+            var numInput1 = document.getElementById("textNum1");
+            var numInput2 = document.getElementById("textNum2");
+            
+            numInput1.value = "";
+            numInput2.value = "";
+
+            // console.log(numInput1.value);
+            // console.log(numInput2.value);
+            
+          //  numInput1.addEventListener('change', 0);
+           // numInput2.addEventListener('change', 0);
+        }
+
+        
+    </script>
+
+</body>
+
+
+
+</html>

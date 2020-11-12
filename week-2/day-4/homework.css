@@ -1,0 +1,49 @@
+.carousel{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carousel_track{
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.carousel_container{
+    height:400px;
+    object-fit: cover;
+    position: relative;
+}
+
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;   
+   
+}
+
+.carousel_button_previous{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%px);
+    background: transparent;
+    border: 0;
+    left: -40px;
+    cursor: pointer;
+}
+
+.carousel_button_next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%px);
+    background: transparent;
+    border: 0;
+    right: -40px;
+    cursor: pointer;
+}
+
+

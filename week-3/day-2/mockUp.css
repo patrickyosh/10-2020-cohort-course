@@ -1,0 +1,61 @@
+span {
+    color: blue; /* Styles! */
+    font-size: 20px;
+    font-style: italic;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  h1{
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  h2{
+      text-transform: capitalize;
+      text-align: center;
+      font-style: normal;
+      color: gray;
+  }
+
+  h3{
+      text-align: left;
+      font-style: italic;
+      color: gray;
+  }
+
+  h4{
+      border-top: 10px solid black;
+      border-bottom: 10px solid black; 
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 40px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .box {
+    background-color: white;
+    float: left;
+    width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 50px; /* if you want space between the images */
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    height: 900px;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
